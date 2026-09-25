@@ -505,7 +505,7 @@
 
       <div class="contact-form glass reveal">
         <form id="feedbackForm" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE">
+          <input type="hidden" name="access_key" value="4804c830-e1e0-4e42-87db-3ce321ca0674">
           <input type="hidden" name="subject" value="New message from portfolio site">
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
@@ -668,7 +668,7 @@
     e.preventDefault();
 
     var accessKey = form.querySelector('input[name="access_key"]').value;
-    if (!accessKey || accessKey === 'YOUR_WEB3FORMS_ACCESS_KEY_HERE') {
+    if (!accessKey) {
       status.textContent = 'Form not yet connected — add your Web3Forms access key to activate.';
       status.className = 'form-status mono err';
       return;
